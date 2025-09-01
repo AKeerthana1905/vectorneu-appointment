@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Widget Test</title>
+</head>
+<body>
+<script>
+window.ChatWidgetConfig = {
+  webhook: {
+    url: 'http://localhost:5678/webhook/aea808cc-ecca-4996-86e7-23ef1335a556/chat', // <-- put your n8n webhook URL here
+    route: 'general'
+  },
+  branding: {
+    logo: 'vectorneu.png', // optional: 
+    name: 'VECTORNEU SOLUTIONS',
+    welcomeText: 'Hi 👋, how can we help?',
+    responseTimeText: 'We usually respond right away',
+     },
+  style: {
+    primaryColor: '#54dde4',
+    secondaryColor: '#172565',
+    position: 'right',  // or 'left'
+    backgroundColor: '#ffffff',
+    fontColor: '#333333'
+  }
+};
+</script>
+
+<!-- load your local fixed script -->
+<script src="chat-widget.js"></script>
+</body>
+</html>
