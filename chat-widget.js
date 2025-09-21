@@ -100,7 +100,7 @@
         img.style.objectFit='cover';
 
         if(type==='user') { img.src='user-icon.png'; img.alt='User'; }
-        else { img.src=config.branding.logo || ''; img.alt='Agent'; }
+        else { img.src=vectorneu.png || ''; img.alt='Agent'; }
 
         img.onload = () => avatarDiv.appendChild(img);
         img.onerror = () => {
